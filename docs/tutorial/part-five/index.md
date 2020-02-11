@@ -4,15 +4,15 @@ typora-copy-images-to: ./
 disableTableOfContents: true
 ---
 
-> This tutorial is part of a series about Gatsby’s data layer. Make sure you’ve gone through [part 4](/tutorial/part-four/) before continuing here.
+> এই টিউটোরিয়ালটি গ্যাটসবির ডেটা স্তর সম্পর্কে একটি সিরিজের অংশ। এখানে চালিয়ে যাওয়ার আগে আপনি [অংশ ৪] (/ টিউটোরিয়াল / অংশ-চতুর্থ /) পেরিয়ে গেছেন তা নিশ্চিত করুন।
 
-## What's in this tutorial?
+## এই টিউটোরিয়ালে কি আছে?
 
-In this tutorial, you'll be learning about how to pull data into your Gatsby site using GraphQL and source plugins. Before you learn about these plugins, however, you'll want to know how to use something called GraphiQL, a tool that helps you structure your queries correctly.
+এই টিউটোরিয়ালে, আপনি গ্রাফকিউএল এবং উত্স প্লাগইনগুলি ব্যবহার করে কীভাবে আপনার গ্যাটসবি সাইটে ডেটা টানবেন সে সম্পর্কে শিখবেন। যাইহোক, এই প্লাগইনগুলি সম্পর্কে জানার আগে, আপনি গ্রাফিকিউএল নামক কোনও জিনিস কীভাবে ব্যবহার করবেন তা জানতে চাইবেন, এটি এমন একটি সরঞ্জাম যা আপনাকে আপনার প্রশ্নগুলি সঠিকভাবে গঠনে সহায়তা করে।
 
-## Introducing GraphiQL
+## উপস্থাপক GraphiQL
 
-GraphiQL is the GraphQL integrated development environment (IDE). It's a powerful (and all-around awesome) tool you'll use often while building Gatsby websites.
+গ্রাফিক্যুয়াল হ'ল গ্রাফকিউএল ইন্টিগ্রেটেড ডেভলপমেন্ট এনভায়রনমেন্ট (আইডিই)। এটি একটি শক্তিশালী (এবং চারপাশে দুর্দান্ত ভয়ঙ্কর) সরঞ্জাম যা আপনি গ্যাটসবি ওয়েবসাইটগুলি তৈরি করার সময় প্রায়শই ব্যবহার করবেন।
 
 You can access it when your site's development server is running—normally at
 <http://localhost:8000/___graphql>.
@@ -22,7 +22,7 @@ You can access it when your site's development server is running—normally at
   <p>Your browser does not support the video element.</p>
 </video>
 
-Poke around the built-in `Site` "type" and see what fields are available on it -- including the `siteMetadata` object you queried earlier. Try opening GraphiQL and play with your data! Press <kbd>Ctrl + Space</kbd> (or use <kbd>Shift + Space</kbd> as an alternate keyboard shortcut) to bring up the autocomplete window and <kbd>Ctrl + Enter</kbd> to run the GraphQL query. You'll be using GraphiQL a lot more through the remainder of the tutorial.
+অন্তর্নির্মিত `Site` "type"এর আশেপাশে পোকে দিন এবং এতে কোন ক্ষেত্রগুলি উপলব্ধ রয়েছে তা দেখুন -- including the `siteMetadata` object you queried earlier. গ্রাফিকিউএল খোলার চেষ্টা করুন এবং আপনার ডেটা দিয়ে খেলুন! Press <kbd>Ctrl + Space</kbd> (or use <kbd>Shift + Space</kbd> as an alternate keyboard shortcut) to bring up the autocomplete window and <kbd>Ctrl + Enter</kbd> to run the GraphQL query. You'll be using GraphiQL a lot more through the remainder of the tutorial.
 
 ## Using the GraphiQL Explorer
 
@@ -33,7 +33,7 @@ The GraphiQL Explorer enables you to interactively construct full queries by cli
   lessonTitle="Build a GraphQL Query using Gatsby’s GraphiQL Explorer"
 />
 
-## Source plugins
+## উত্স প্লাগইন
 
 Data in Gatsby sites can come from anywhere: APIs, databases, CMSs, local files, etc.
 
@@ -213,6 +213,6 @@ And now visit [http://localhost:8000/my-files](http://localhost:8000/my-files)�
 
 ![my-files-page](my-files-page.png)
 
-## What's coming next?
+## এরপরে কী আসছে?
 
-Now you've learned how source plugins bring data _into_ Gatsby’s data system. In the next tutorial, you'll learn how transformer plugins _transform_ the raw content brought by source plugins. The combination of source plugins and transformer plugins can handle all data sourcing and data transformation you might need when building a Gatsby site. Learn about transformer plugins in [part six of the tutorial](/tutorial/part-six/).
+এখন আপনি শিখেছেন কীভাবে উত্স প্লাগইনগুলি _ ইনটো_গ্যাটসির ডেটা সিস্টেমটি ডেটা নিয়ে আসে।পরবর্তী টিউটোরিয়ালে, আপনি শিখবেন কীভাবে ট্রান্সফর্মার প্লাগইনগুলি উত্স প্লাগইনগুলি নিয়ে আসা কাঁচামালকে _ ট্রান্সফর্ম_ করে।সোর্স প্লাগইন এবং ট্রান্সফর্মার প্লাগইনগুলির সংমিশ্রণ কোনও গাটস্বি সাইট তৈরির সময় আপনার প্রয়োজন হতে পারে এমন সমস্ত ডেটা সোর্সিং এবং ডেটা ট্রান্সফরমেশন পরিচালনা করতে পারে। ট্রান্সফরমার প্লাগইনগুলি সম্পর্কে জানুন [অংশ ছয় tutorial](/tutorial/part-six/).
